@@ -1,190 +1,154 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Instagram</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
-    
-    body {
-      font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    }
-    
-    .instagram-logo {
-      font-family: 'Brush Script MT', cursive;
-      font-size: 3rem;
-      font-weight: 400;
-    }
-    
-    .phone-mockup {
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      border-radius: 2rem;
-      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clon de Red Social - Tarea</title> <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+        body {
+            font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+
+        /* CAMBIO: Se mantiene el estilo pero con nombre genérico para evitar la marca de phishing */
+        .app-logo {
+            font-family: 'Brush Script MT', cursive;
+            font-size: 3rem;
+            font-weight: 400;
+        }
+
+        .phone-mockup {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 2rem;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+    </style>
 </head>
 <body class="bg-white min-h-screen flex flex-col">
-  
-  <!-- Main Content -->
-  <main class="flex-1 flex items-center justify-center px-4 py-8">
-    <div class="w-full max-w-4xl flex items-center justify-center gap-8">
-      
-      <!-- Left Side - Phone Mockups with Images -->
-      <div class="hidden lg:flex relative w-1/2 justify-center">
-        <div class="relative w-96 h-[600px]">
-          <!-- Background phone images collage -->
-          <div class="absolute inset-0 flex items-center justify-center">
-            <div class="relative w-80 h-[550px]">
-              <!-- Main center image -->
-              <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-80 phone-mockup overflow-hidden z-10">
-                <img src="/placeholder.svg?height=320&width=256" alt="Instagram photo" class="w-full h-full object-cover">
-                <div class="absolute bottom-4 left-4 right-4 flex items-center gap-2">
-                  <div class="w-8 h-8 rounded-full bg-white/20 backdrop-blur-sm"></div>
-                  <div class="flex-1 h-8 rounded-full bg-white/20 backdrop-blur-sm"></div>
+
+    <main class="flex-1 flex items-center justify-center px-4 py-8">
+        <div class="w-full max-w-4xl flex items-center justify-center gap-8">
+
+            <div class="hidden lg:flex relative w-1/2 justify-center">
+                <div class="relative w-96 h-[600px]">
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="relative w-80 h-[550px]">
+                            <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-80 phone-mockup overflow-hidden z-10">
+                                <img src="/placeholder.svg?height=320&width=256" alt="Social Media photo" class="w-full h-full object-cover">
+                                <div class="absolute bottom-4 left-4 right-4 flex items-center gap-2">
+                                    <div class="w-8 h-8 rounded-full bg-white/20 backdrop-blur-sm"></div>
+                                    <div class="flex-1 h-8 rounded-full bg-white/20 backdrop-blur-sm"></div>
+                                </div>
+                            </div>
+
+                            <div class="absolute left-0 top-12 w-48 h-64 rounded-2xl overflow-hidden shadow-2xl rotate-[-15deg] z-0">
+                                <img src="/placeholder.svg?height=256&width=192" alt="Social Media photo" class="w-full h-full object-cover">
+                                <div class="absolute top-4 left-4">
+                                    <div class="w-6 h-6 bg-red-500 rounded-full"></div>
+                                </div>
+                            </div>
+
+                            <div class="absolute right-0 top-20 w-48 h-64 rounded-2xl overflow-hidden shadow-2xl rotate-[15deg] z-0">
+                                <img src="/placeholder.svg?height=256&width=192" alt="Social Media photo" class="w-full h-full object-cover">
+                                <div class="absolute top-4 right-4">
+                                    <div class="w-8 h-8 rounded-full border-2 border-white overflow-hidden">
+                                        <div class="w-full h-full bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="absolute top-8 left-12 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center z-20">
+                                <span class="text-2xl">🔥</span>
+                            </div>
+                            <div class="absolute top-16 right-8 w-10 h-10 bg-white rounded-full shadow-lg flex items-center justify-center z-20">
+                                <span class="text-xl">💜</span>
+                            </div>
+                            <div class="absolute bottom-32 left-8 w-14 h-14 bg-white rounded-full shadow-lg flex items-center justify-center z-20">
+                                <span class="text-2xl">❤️</span>
+                            </div>
+                            <div class="absolute top-24 left-20 w-10 h-10 bg-white rounded-full shadow-lg flex items-center justify-center z-20">
+                                <span class="text-xl">😍</span>
+                            </div>
+                            <div class="absolute bottom-24 right-12 w-12 h-12 bg-gradient-to-br from-green-400 to-green-600 rounded-full shadow-lg flex items-center justify-center z-20">
+                                <span class="text-2xl">⭐</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              
-              <!-- Left card -->
-              <div class="absolute left-0 top-12 w-48 h-64 rounded-2xl overflow-hidden shadow-2xl rotate-[-15deg] z-0">
-                <img src="/placeholder.svg?height=256&width=192" alt="Instagram photo" class="w-full h-full object-cover">
-                <div class="absolute top-4 left-4">
-                  <div class="w-6 h-6 bg-red-500 rounded-full"></div>
-                </div>
-              </div>
-              
-              <!-- Right card -->
-              <div class="absolute right-0 top-20 w-48 h-64 rounded-2xl overflow-hidden shadow-2xl rotate-[15deg] z-0">
-                <img src="/placeholder.svg?height=256&width=192" alt="Instagram photo" class="w-full h-full object-cover">
-                <div class="absolute top-4 right-4">
-                  <div class="w-8 h-8 rounded-full border-2 border-white overflow-hidden">
-                    <div class="w-full h-full bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600"></div>
-                  </div>
-                </div>
-              </div>
-              
-              <!-- Floating reaction icons -->
-              <div class="absolute top-8 left-12 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center z-20">
-                <span class="text-2xl">🔥</span>
-              </div>
-              <div class="absolute top-16 right-8 w-10 h-10 bg-white rounded-full shadow-lg flex items-center justify-center z-20">
-                <span class="text-xl">💜</span>
-              </div>
-              <div class="absolute bottom-32 left-8 w-14 h-14 bg-white rounded-full shadow-lg flex items-center justify-center z-20">
-                <span class="text-2xl">❤️</span>
-              </div>
-              <div class="absolute top-24 left-20 w-10 h-10 bg-white rounded-full shadow-lg flex items-center justify-center z-20">
-                <span class="text-xl">😍</span>
-              </div>
-              <div class="absolute bottom-24 right-12 w-12 h-12 bg-gradient-to-br from-green-400 to-green-600 rounded-full shadow-lg flex items-center justify-center z-20">
-                <span class="text-2xl">⭐</span>
-              </div>
             </div>
-          </div>
+
+            <div class="w-full lg:w-1/2 max-w-sm">
+                <div class="bg-white border border-gray-300 px-10 py-8">
+                    <h1 class="app-logo text-center mb-8">MiAppClon</h1>
+
+                    <form class="space-y-2">
+                        <input
+                            type="text"
+                            placeholder="Nombre de usuario o Email" class="w-full px-2 py-2 text-xs border border-gray-300 rounded bg-gray-50 focus:outline-none focus:border-gray-400"
+                        >
+
+                        <input
+                            type="password"
+                            placeholder="Contraseña"
+                            class="w-full px-2 py-2 text-xs border border-gray-300 rounded bg-gray-50 focus:outline-none focus:border-gray-400"
+                        >
+
+                        <button
+                            type="submit"
+                            class="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 rounded-lg text-sm mt-4"
+                        >
+                            Iniciar Sesión de Prueba </button>
+                    </form>
+
+                    <div class="flex items-center my-5">
+                        <div class="flex-1 border-t border-gray-300"></div>
+                        <span class="px-4 text-sm text-gray-500 font-semibold">O</span>
+                        <div class="flex-1 border-t border-gray-300"></div>
+                    </div>
+
+                    <a href="#" class="block text-center text-xs text-blue-900 mt-4">
+                        ¿Olvidaste tu contraseña?
+                    </a>
+                </div>
+
+                <div class="bg-white border border-gray-300 px-10 py-5 mt-3 text-center">
+                    <p class="text-sm">
+                        ¿No tienes una cuenta? <a href="#" class="text-blue-500 font-semibold">Regístrate</a>
+                    </p>
+                </div>
+
+                <div class="mt-5">
+                    <p class="text-center text-sm mb-4">Descarga la app de prueba.</p> <div class="flex gap-2 justify-center">
+                        <img src="/placeholder.svg?height=40&width=135" alt="Download on App Store" class="h-10">
+                        <img src="/placeholder.svg?height=40&width=135" alt="Get it on Google Play" class="h-10">
+                    </div>
+                </div>
+            </div>
+
         </div>
-      </div>
-      
-      <!-- Right Side - Login Form -->
-      <div class="w-full lg:w-1/2 max-w-sm">
-        <div class="bg-white border border-gray-300 px-10 py-8">
-          <!-- Instagram Logo -->
-          <h1 class="instagram-logo text-center mb-8">Instagram</h1>
-          
-          <!-- Login Form -->
-          <form class="space-y-2">
-            <input 
-              type="text" 
-              placeholder="Phone number, username, or email"
-              class="w-full px-2 py-2 text-xs border border-gray-300 rounded bg-gray-50 focus:outline-none focus:border-gray-400"
-            >
-            
-            <input 
-              type="password" 
-              placeholder="Password"
-              class="w-full px-2 py-2 text-xs border border-gray-300 rounded bg-gray-50 focus:outline-none focus:border-gray-400"
-            >
-            
-            <button 
-              type="submit"
-              class="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 rounded-lg text-sm mt-4"
-            >
-              Log in
-            </button>
-          </form>
-          
-          <!-- OR Divider -->
-          <div class="flex items-center my-5">
-            <div class="flex-1 border-t border-gray-300"></div>
-            <span class="px-4 text-sm text-gray-500 font-semibold">OR</span>
-            <div class="flex-1 border-t border-gray-300"></div>
-          </div>
-          
-          <!-- Facebook Login -->
-          <button class="w-full flex items-center justify-center gap-2 text-blue-900 font-semibold text-sm">
-            <svg class="w-5 h-5" fill="#1877F2" viewBox="0 0 24 24">
-              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-            </svg>
-            Log in with Facebook
-          </button>
-          
-          <!-- Forgot Password -->
-          <a href="#" class="block text-center text-xs text-blue-900 mt-4">
-            Forgot password?
-          </a>
+    </main>
+
+    <footer class="py-8 px-4">
+        <div class="max-w-4xl mx-auto">
+            <nav class="flex flex-wrap justify-center gap-x-4 gap-y-2 text-xs text-gray-500 mb-4">
+                <a href="#" class="hover:underline">Acerca de</a>
+                <a href="#" class="hover:underline">Blog</a>
+                <a href="#" class="hover:underline">Ayuda</a>
+                <a href="#" class="hover:underline">Términos</a>
+                <a href="#" class="hover:underline">Privacidad</a>
+            </nav>
+
+            <div class="flex justify-center items-center gap-4 text-xs text-gray-500">
+                <select class="bg-transparent border-none text-gray-500 text-xs focus:outline-none">
+                    <option>English</option>
+                    <option selected>Español</option>
+                    <option>Français</option>
+                </select>
+                <span>© 2025 Proyecto de Tarea</span>
+            </div>
         </div>
-        
-        <!-- Sign Up Box -->
-        <div class="bg-white border border-gray-300 px-10 py-5 mt-3 text-center">
-          <p class="text-sm">
-            Don't have an account? <a href="#" class="text-blue-500 font-semibold">Sign up</a>
-          </p>
-        </div>
-        
-        <!-- Get the App -->
-        <div class="mt-5">
-          <p class="text-center text-sm mb-4">Get the app.</p>
-          <div class="flex gap-2 justify-center">
-            <img src="/placeholder.svg?height=40&width=135" alt="Download on App Store" class="h-10">
-            <img src="/placeholder.svg?height=40&width=135" alt="Get it on Google Play" class="h-10">
-          </div>
-        </div>
-      </div>
-      
-    </div>
-  </main>
-  
-  <!-- Footer -->
-  <footer class="py-8 px-4">
-    <div class="max-w-4xl mx-auto">
-      <nav class="flex flex-wrap justify-center gap-x-4 gap-y-2 text-xs text-gray-500 mb-4">
-        <a href="#" class="hover:underline">Meta</a>
-        <a href="#" class="hover:underline">About</a>
-        <a href="#" class="hover:underline">Blog</a>
-        <a href="#" class="hover:underline">Jobs</a>
-        <a href="#" class="hover:underline">Help</a>
-        <a href="#" class="hover:underline">API</a>
-        <a href="#" class="hover:underline">Privacy</a>
-        <a href="#" class="hover:underline">Terms</a>
-        <a href="#" class="hover:underline">Locations</a>
-        <a href="#" class="hover:underline">Instagram Lite</a>
-        <a href="#" class="hover:underline">Meta AI</a>
-        <a href="#" class="hover:underline">Meta AI Articles</a>
-        <a href="#" class="hover:underline">Threads</a>
-        <a href="#" class="hover:underline">Contact Uploading & Non-Users</a>
-        <a href="#" class="hover:underline">Meta Verified</a>
-      </nav>
-      
-      <div class="flex justify-center items-center gap-4 text-xs text-gray-500">
-        <select class="bg-transparent border-none text-gray-500 text-xs focus:outline-none">
-          <option>English</option>
-          <option>Español</option>
-          <option>Français</option>
-        </select>
-        <span>© 2025 Instagram from Meta</span>
-      </div>
-    </div>
-  </footer>
-  
+    </footer>
+
 </body>
 </html>
